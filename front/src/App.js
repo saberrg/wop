@@ -2,11 +2,7 @@ import './App.css';
 import StarterGif from './components/StarterGif';
 
 function App() {
-  return (  
-    <div>
-      <StarterGif />
-    </div>
-   );
+  return <StarterGif />;
 }
 
 export default App;

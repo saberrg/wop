@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroText from './HeroText';
 
 function StarterGif() {
   return (
@@ -14,17 +15,14 @@ function StarterGif() {
         alt="Cinematic Background"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{
-          transform: 'scale(1.2)', // Zoom-out effect
-          transformOrigin: 'center center', // Keep the zoom centered
+          width: '120%', // Scale width to zoom out
+          height: '120%', // Scale height to zoom out
+          objectFit: 'cover', // Ensure it covers the screen proportionally
+          objectPosition: 'center', // Keep the content centered
         }}
       />
 
-      {/* Overlay for Text */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-white text-5xl md:text-7xl font-bold">
-          World of Program
-        </h1>
-      </div>
+      <HeroText />
     </div>
   );
 }
